@@ -1,0 +1,108 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: 
+
+
+BO_ 2559694551 HydrogenManagementSystemStatus: 8 Vector__XXX
+ SG_ HMSModeState : 48|16@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ TubePressure : 40|8@1+ (0.1,0) [0|25.5] "bar" Vector__XXX
+ SG_ HydrogenFuelSOC : 32|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ Reserved1 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Reserved0 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Valve7Status : 14|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Valve6Status : 12|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Valve5Status : 10|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Valve4Status : 8|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Valve3Status : 6|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Valve2Status : 4|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Valve1Status : 2|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MainValveStatus : 0|2@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2559760087 TemperatureStatus: 8 Vector__XXX
+ SG_ LowestRevealOfNumber : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ LowestReveal : 48|8@1+ (200,0) [0|50000] "ppm" Vector__XXX
+ SG_ HighestRevealOfNumber : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ HighestReveal : 32|8@1+ (200,0) [0|50000] "ppm" Vector__XXX
+ SG_ LowestTemperatureOfNumber : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ LowstTemperature   : 16|8@1+ (1,-40) [-40|215] "?" Vector__XXX
+ SG_ HighestTemperatureofNumber : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ HighestTemperature : 0|8@1+ (1,-40) [-40|215] "?" Vector__XXX
+
+BO_ 2559825623 TublePressureStatus: 8 Vector__XXX
+ SG_ Reserved1 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Reserved0 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LowestTublePressureOfNumber : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ LowestTublePressure : 24|16@1+ (0.1,0) [0|6553] "Mpa" Vector__XXX
+ SG_ HighestTublePressureOfNumber : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ HighestTublePressure : 0|16@1+ (0.1,0) [0|6553] "Mpa" Vector__XXX
+
+BO_ 2559891159 WeightOfFuel: 8 Vector__XXX
+ SG_ Reserved5 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Reserved4 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Reserved3 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Reserved2 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Reserved1 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Reserved0 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ WeightOfFuel : 0|16@1+ (0.01,0) [0|600] "Kg" Vector__XXX
+
+
+
+
+CM_ SG_ 2559694551 TubePressure "Tube Pressure";
+CM_ SG_ 2559694551 HydrogenFuelSOC "Hydrogen Fuel SOC";
+CM_ SG_ 2559760087 LowestRevealOfNumber "Lowest Reveal Of NO. ";
+CM_ SG_ 2559760087 LowestReveal "Lowest Reveal";
+CM_ SG_ 2559760087 HighestRevealOfNumber "Highest Reveal Of NO. ";
+CM_ SG_ 2559760087 HighestReveal "Highest Reveal";
+CM_ SG_ 2559760087 LowestTemperatureOfNumber "Lowest Temperature Of NO.  ";
+CM_ SG_ 2559760087 LowstTemperature   "Lowest Temperature";
+CM_ SG_ 2559760087 HighestTemperatureofNumber "Highest Temperature Of NO.  ";
+CM_ SG_ 2559760087 HighestTemperature "Highest Temperature";
+CM_ SG_ 2559825623 LowestTublePressureOfNumber "Lowest Tuble Pressure Of NO.";
+CM_ SG_ 2559825623 LowestTublePressure "Lowest Tuble Pressure";
+CM_ SG_ 2559825623 HighestTublePressureOfNumber "Highest Tuble Pressure Of NO.";
+CM_ SG_ 2559825623 HighestTublePressure "Highest Tuble Pressure";
+CM_ SG_ 2559891159 WeightOfFuel "Weight Of Fuel";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_ "GenMsgCycleTime" BO_ 2559694551 100;
+BA_ "GenMsgCycleTime" BO_ 2559760087 100;
+BA_ "GenMsgCycleTime" BO_ 2559825623 100;
+BA_ "GenMsgCycleTime" BO_ 2559891159 100;
+
+
+
+
